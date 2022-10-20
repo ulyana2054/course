@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author chashka
+ *
+ */
+module FirstProject {
+}

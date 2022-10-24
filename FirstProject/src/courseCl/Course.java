@@ -7,9 +7,11 @@ public abstract class Course {
 	protected String title;
 	protected int duration;
 	protected String branch;
-	protected List<String> tags = new ArrayList<String>();
+	protected ArrayList<String> tags = new ArrayList<String>();
 	
-	Course(int id, String title, int duration, String branch){
+	public Course() {}
+	
+	public Course(int id, String title, int duration, String branch){
 		this.id = id;
 		this.title = title;
 		this.duration = duration;
@@ -18,25 +20,24 @@ public abstract class Course {
 	public int getId() {
 		return this.id;
 	}
-	
 	public String getTitle() {
 		return this.title;
 	}
-	
 	public int getDuration() {
 		return this.duration;
 	}
-	
 	public String getBranch() {
 		return this.branch;
 	}
-	
 	public void addTag(String tag) {
 		tags.add(tag);
 	}
-	
 	public void removeTag(int pos) {
 		tags.remove(pos);
 	}
+	public ArrayList<String> getTags(){
+		return tags;
+	}
 	
+	abstract public String getDescription();
 }

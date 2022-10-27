@@ -2,7 +2,7 @@ package courseCl;
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class Course {
+public abstract class Course implements Describable {
 	protected int id;
 	protected String title;
 	protected int duration;
@@ -39,5 +39,5 @@ public abstract class Course {
 		return tags;
 	}
 	
-	abstract public String getDescription();
+
 }
